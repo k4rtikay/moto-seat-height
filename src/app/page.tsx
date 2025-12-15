@@ -1,7 +1,6 @@
+import { MeasurementsForm } from "@/components/visualizer/landing-form";
 import Image from "next/image";
 import Link from "next/link";
-import { useForm } from "react-hook-form";
-
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -23,14 +22,8 @@ export default function Home() {
           <Link href="/visualizer">Go to Visualizer</Link>
         </button>
       </div>
+        <MeasurementsForm />
       <div>
-        <form action="" className="flex flex-col align-center justify-center shadow-2xs p-8 rounded-lg bg-white dark:bg-zinc-800">
-          <label htmlFor="inseam">Inseam Length:</label>
-          <input type="text" name="inseam" />
-          <label htmlFor="height">Height:</label>
-          <input type="text" name="height" />
-          <button type="submit" className="">Submit</button>
-        </form>
       </div>
     </div>
   );
