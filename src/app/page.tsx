@@ -6,14 +6,14 @@ export default function Home() {
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <div className="max-w-2xl p-8">
         <h1 className="mb-6 text-4xl font-bold text-zinc-900 dark:text-zinc-100">
-          Seat Height Visualiser
+          Seat Height Visualizer
         </h1>
         <p className="mb-4 text-zinc-700 dark:text-zinc-300">
-          A tool to help you visualise how different seat heights will feel based on your inseam length and height.
+          A tool to help you visualize how different seat heights will feel based on your inseam length and height.
         </p>
         <Image
-          src="/seat-height-visualiser.png"
-          alt="Seat Height Visualiser Screenshot"
+          src="/seat-height-visualizer.png"
+          alt="Seat Height Visualizer Screenshot"
           width={800}
           height={400}
           className="rounded-lg border border-zinc-200 dark:border-zinc-700"
