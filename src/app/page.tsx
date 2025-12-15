@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
           Seat Height Visualiser
         </h1>
         <p className="mb-4 text-zinc-700 dark:text-zinc-300">
-          A tool to help you visualise how different seat heights will feel based on your inseam length.
+          A tool to help you visualise how different seat heights will feel based on your inseam length and height.
         </p>
         <Image
           src="/seat-height-visualiser.png"
