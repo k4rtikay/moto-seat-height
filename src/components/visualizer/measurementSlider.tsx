@@ -4,15 +4,14 @@ interface MeasurementSliderProps {
     min: number;
     max: number;
     step: number;
-    defaultValue: number[];
     value: number[];
     setValue: (val: number[]) => void;
 }
 
-export function MeasurementSlider({ min, max, step, defaultValue, value, setValue }: MeasurementSliderProps) {
+export function MeasurementSlider({ min, max, step, value, setValue }: MeasurementSliderProps) {
     return (
         <div>
-            <Slider defaultValue={defaultValue} max={max} step={step} min={min} value={value} onValueChange={setValue} />
+            <Slider max={max} step={step} min={min} value={value} onValueChange={setValue} />
         </div>
     );
 }

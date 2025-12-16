@@ -16,9 +16,9 @@ export const Controls: React.FC<ControlsProps> = (props) => {
         <div className={props.className}>
             Controls Component
             <div>Height: {height} cm</div>
-            <MeasurementSlider min={120} max={250} step={1} defaultValue={[height]} value={[height]} setValue={(values)=> setHeight(values[0])} />
+            <MeasurementSlider min={120} max={250} step={1} value={[height]} setValue={(values)=> setHeight(values[0])} />
             <div>Inseam: {inseam} cm</div>
-            <MeasurementSlider min={50} max={120} step={1} defaultValue={[inseam]} value={[inseam]} setValue={(values)=> setInseam(values[0])} />
+            <MeasurementSlider min={50} max={120} step={1} value={[inseam]} setValue={(values)=> setInseam(values[0])} />
         </div>
     );
 };
