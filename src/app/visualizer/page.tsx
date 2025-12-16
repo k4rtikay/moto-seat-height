@@ -10,16 +10,16 @@ export default function VisualizerPage() {
     const searchParams = useSearchParams();
     const heightParams = searchParams.get("height");
     const inseamParams = searchParams.get("inseam");
-    const height = useBikeStore((state) => state.height)
-    const inseam = useBikeStore((state) => state.inseam)
-    const setHeight = useBikeStore((state) => state.setHeight)
-    const setInseam = useBikeStore((state) => state.setInseam)
+    const height = useBikeStore((state) => state.height);
+    const inseam = useBikeStore((state) => state.inseam);
+    const setHeight = useBikeStore((state) => state.setHeight);
+    const setInseam = useBikeStore((state) => state.setInseam);
 
 
     const parseParams = (val: string | null, fallback: number) => {
         const parsed = parseInt(val || "");
         return isNaN(parsed) ? fallback : parsed;
-    }
+    };
 
     const heightValue = parseParams(heightParams, 175);
     const inseamValue = parseParams(inseamParams, 80);
@@ -33,7 +33,6 @@ export default function VisualizerPage() {
         <div className="flex gap-4 h-screen">
             <aside>
                 <Controls
-                    height={height} inseam={inseam}
                     className="bg-neutral-300 h-full p-4"
                 />
             </aside>
