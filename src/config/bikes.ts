@@ -2,7 +2,7 @@ export const bikes = [
     {
         id: "ktm-duke-390",
         name: "KTM Duke 390",
-        image: "",
+        image: "/bikes/hero-xpluse-200-4v.png",
         category: "naked",
         specs: {
             seatHeight: 820,

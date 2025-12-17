@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { Controls } from "@/components/visualizer/controls";
 import { useSearchParams } from "next/navigation";
 import { useBikeStore } from "@/store/useBikeStore";
+import { Stage } from "@/components/visualizer/stage";
 
 export default function VisualizerPage() {
 
@@ -36,7 +37,10 @@ export default function VisualizerPage() {
                     className="bg-neutral-300 h-full p-4"
                 />
             </aside>
-            <h1 className="text-xl font-semibold">Visualizer Page</h1>
+            <main className="flex-1 p-4 overflow-y-auto">
+                <h1 className="text-xl font-semibold">Visualizer Page</h1>
+                <Stage></Stage>
+            </main>
         </div>
     )
 }
